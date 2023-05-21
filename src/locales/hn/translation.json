@@ -1,0 +1,17 @@
+{
+    "income": "आय",
+    "expenditure": "व्यय",
+    "mobile_bill": "मोबाइल बिल",
+    "electricity_bill": "बिजली का बिल",
+    "select-lang": "भाषा चुने",
+    "chart-title": "उपयोगकर्ता आय संकी आरेख",
+    "name": "नाम",
+    "edit": "संपादन करना",
+    "delete": "मिटाना",
+    "users-list-title": "उपयोगकर्ता विवरण",
+    "add-user": "उपयोगकर्ता जोड़ें",
+    "actions": "कार्रवाई",
+    "expenditures": "व्यय",
+    "update-user": "अद्यतन उपयोगकर्ता",
+    "cancel": "रद्द करना"
+}

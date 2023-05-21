@@ -1,0 +1,17 @@
+{
+    "income": "ಆದಾಯ",
+    "expenditure": "ವೆಚ್ಚ",
+    "mobile_bill": "ಮೊಬೈಲ್ ಬಿಲ್",
+    "electricity_bill": "ವಿದ್ಯುತ್ ಬಿಲ್",
+    "select-lang": "ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    "chart-title": "ಬಳಕೆದಾರರ ಆದಾಯ ಸ್ಯಾಂಕಿ ರೇಖಾಚಿತ್ರ",
+    "name": "ಹೆಸರು",
+    "edit": "ತಿದ್ದು",
+    "delete": "ಅಳಿಸಿ",
+    "users-list-title": "ಬಳಕೆದಾರರ ವಿವರಗಳು",
+    "add-user": "ಬಳಕೆದಾರರನ್ನು ಸೇರಿಸಿ",
+    "actions": "ಕ್ರಮಗಳು",
+    "expenditures": "ಖರ್ಚುಗಳು",
+    "update-user": "ಬಳಕೆದಾರರನ್ನು ನವೀಕರಿಸಿ",
+    "cancel": "ರದ್ದುಮಾಡು"
+}

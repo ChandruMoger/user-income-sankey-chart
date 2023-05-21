@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "name": "Chandru",
+      "income": 3000,
+      "expenditure": 2200,
+      "expenditures": {
+        "mobile_bill": 700,
+        "electricity_bill": 1500
+      },
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Naveen",
+      "income": 5000,
+      "expenditure": 3000,
+      "expenditures": {
+        "mobile_bill": 1000,
+        "electricity_bill": 2000
+      }
+    },
+    {
+      "id": 3,
+      "name": "Mohini",
+      "income": 10000,
+      "expenditure": 7000,
+      "expenditures": {
+        "mobile_bill": 1000,
+        "electricity_bill": 6000
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dhanish",
+      "income": 10000,
+      "expenditure": 7000,
+      "expenditures": {
+        "mobile_bill": 1000,
+        "electricity_bill": 6000
+      }
+    },
+    {
+      "id": 5,
+      "name": "Krathika",
+      "income": 10000,
+      "expenditure": 10000,
+      "expenditures": {
+        "mobile_bill": 5000,
+        "electricity_bill": 5000
+      }
+    },
+    {
+      "id": 6,
+      "name": "Yatish",
+      "income": 10000,
+      "expenditure": 7000,
+      "expenditures": {
+        "mobile_bill": 1000,
+        "electricity_bill": 6000
+      }
+    },
+    {
+      "id": 7,
+      "name": "Prathick",
+      "income": 10000,
+      "expenditure": 7000,
+      "expenditures": {
+        "mobile_bill": 1000,
+        "electricity_bill": 6000
+      }
+    },
+    {
+      "id": 8,
+      "name": "Pritvi",
+      "income": 7000,
+      "expenditure": 4500,
+      "expenditures": {
+        "mobile_bill": 1500,
+        "electricity_bill": 3000
+      }
+    },
+    {
+      "name": "Nagaraj",
+      "income": 100000,
+      "expenditure": 50000,
+      "expenditures": {
+        "mobile_bill": 15000,
+        "electricity_bill": 20000
+      },
+      "id": 9
+    },
+    {
+      "name": "Sanjeeth",
+      "income": 12000,
+      "expenditure": 8000,
+      "expenditures": {
+        "mobile_bill": 2000,
+        "electricity_bill": 6000
+      },
+      "id": 10
+    }
+  ]
+}

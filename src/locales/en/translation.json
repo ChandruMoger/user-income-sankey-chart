@@ -1,0 +1,18 @@
+{
+    "income": "Income",
+    "expenditure": "Expenditure",
+    "mobile_bill": "Mobile Bill",
+    "electricity_bill": "Electricity Bill",
+    "select-lang": "Select Language",
+    "chart-title": "User Income Sankey Diagram",
+    "name": "Name",
+    "edit": "Edit",
+    "delete": "Delete",
+    "users-list-title": "Users Details",
+    "add-user": "Add User",
+    "actions": "Actions",
+    "expenditures": "Expenditures",
+    "add_user": "Add User",
+    "update-user": "Update User",
+    "cancel": "Cancel"
+}
