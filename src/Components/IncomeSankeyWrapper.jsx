@@ -11,6 +11,7 @@ const path = linkHorizontal()
   .target((d) => [d.target.x0, d.y1]);
 
 import Sankey from "./SankeyDiagram";
+import { addLink } from "../utils/common-utility";
 
 const color = scaleSequential(interpolateCool);
 
@@ -68,14 +69,7 @@ function SankeyWrapper(props) {
     };
     return userdata;
   };
-
-  const addLink = (source, target, value) => {
-    return {
-      source: source,
-      target: target,
-      value: value,
-    };
-  };
+  
   const {
     data,
     width,
