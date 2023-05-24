@@ -1,5 +1,6 @@
 {
-    "income": "आय",
+    "income": "आय",    
+    "incomes": "आय",   
     "expenditure": "व्यय",
     "mobile_bill": "मोबाइल बिल",
     "electricity_bill": "बिजली का बिल",
@@ -13,5 +14,7 @@
     "actions": "कार्रवाई",
     "expenditures": "व्यय",
     "update-user": "अद्यतन उपयोगकर्ता",
-    "cancel": "रद्द करना"
+    "cancel": "रद्द करना",
+    "add-income": "आय जोड़ें",
+    "add-expenditure": "व्यय जोड़ें"
 }

@@ -19,11 +19,11 @@ const UserList = ({ columns, users = [], onDelete, onUpdate }) => {
     );
   };
 
-  const UserExpenditure = ({ user, header }) => {
+  const DisplayList = ({ data=[] }) => {
     return (
       <ul>
-        {Object.keys(user[header]).map((key, idx) => (
-          <li key={idx}> {`${t(`${key}`)}: ${user[header][key]}`}</li>
+        {data.map((item, idx) => (
+          <li key={idx}> {`${t(`${item.name}`)}: ${item.amount}`}</li>
         ))}
       </ul>
     );
@@ -36,9 +36,9 @@ const UserList = ({ columns, users = [], onDelete, onUpdate }) => {
           return (
             <tr data-testid="table-body-row" key={idx}>
               {columns.map((header, index) => {
-                return header === "expenditures" ? (
+                return Array.isArray(user[header]) ? (
                   <td key={index}>
-                    <UserExpenditure header={header} user={user} />
+                    <DisplayList data={user[header]} />
                   </td>
                 ) : (
                   <td key={index}>

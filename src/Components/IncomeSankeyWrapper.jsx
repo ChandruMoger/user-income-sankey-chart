@@ -21,28 +21,10 @@ function SankeyWrapper(props) {
     highlightLinkIndexes: [],
     highlightNode: null,
   });
-  const defaultNodes = [
-    {
-      node: 0,
-      name: "income",
-    },
-    {
-      node: 1,
-      name: "expenditure",
-    },
-    {
-      node: 2,
-      name: "electricity_bill",
-    },
-    {
-      node: 3,
-      name: "mobile_bill",
-    },
-  ];
 
   const formatIncomeData = (data) => {
     const links = [];
-    const nodes = [...defaultNodes];
+    const nodes = [];
     data.forEach((user) => {
       nodes.push({
         node: nodes.length,
@@ -88,7 +70,7 @@ function SankeyWrapper(props) {
       width={width + margin.left + margin.right}
       height={height + margin.top + margin.bottom}
     >
-      <Sankey
+      {/* <Sankey
         top={margin.top}
         left={margin.left}
         data={formatIncomeData(data)}
@@ -154,7 +136,7 @@ function SankeyWrapper(props) {
             </Group>
           </Group>
         )}
-      </Sankey>
+      </Sankey> */}
     </svg>
   );
 }
