@@ -39,7 +39,7 @@ const Header = () => {
       </div>
   }
   return (
-    <header className="header p-2 d-flex justify-content-between align-items-center">
+    <header className="header ctm-theme-bg-color p-2 d-flex justify-content-between align-items-center">
       <Logo classes="w-150" />      
       <LangSelector />
     </header>
