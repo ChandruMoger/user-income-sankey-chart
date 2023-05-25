@@ -3,10 +3,11 @@ const AddFormFields = ({ fieldNames = [], fieldName, errors, register, remove })
     <>
       {fieldNames.map((field, index) => (
         <div key={field.id}>
-          <div className="form-control d-flex column-gap-10 align-items-start">
+          <div className="form-control d-flex column-gap-10 align-items-start px-0">
             <span>
               <input
                 type="text"
+                className="rounded border border-light-gray"
                 placeholder="Income Source"
                 {...register(`${fieldName}.${index}.name`, {
                   required: {
@@ -25,6 +26,7 @@ const AddFormFields = ({ fieldNames = [], fieldName, errors, register, remove })
               <input
                 type="text"
                 placeholder="Amount"
+                className="rounded border border-light-gray"
                 {...register(`${fieldName}.${index}.amount`, {
                   valueAsNumber: true,
                   required: {

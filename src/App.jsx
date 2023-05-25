@@ -27,7 +27,6 @@ function App() {
       try {
         setIsLoading(true)
         const users = await getAllUsers();
-        console.log(users)
         setUsers(users);
         setIsLoading(false)
       } catch (error) {
@@ -120,7 +119,7 @@ function App() {
           <>
             <div className="d-flex my-4 column-gap-10">
               <h4 data-testid="users-title">{t("users-list-title")}</h4>
-              <button className="btn btn-success" onClick={addUser}>
+              <button className="btn ctm-theme-bg-color text-light" onClick={addUser}>
                 {t("add-user")}
               </button>
             </div>
@@ -137,8 +136,8 @@ function App() {
                 onUpdate={updateUserHandler}
               />
             </div>
-            {/* <h4 className="my-4">{t("chart-title")}</h4>
-            <SankeyWrapper data={users} width={960} height={300} /> */}
+            <h4 className="my-4">{t("chart-title")}</h4>
+            <SankeyWrapper data={users} width={960} height={300} />
           </>
         )}
 

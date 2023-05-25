@@ -11,7 +11,7 @@ const path = linkHorizontal()
   .target((d) => [d.target.x0, d.y1]);
 
 import Sankey from "./SankeyDiagram";
-import { addLink } from "../utils/common-utility";
+import { formatNodes } from "../utils/common-utility";
 
 const color = scaleSequential(interpolateCool);
 
@@ -21,27 +21,33 @@ function SankeyWrapper(props) {
     highlightLinkIndexes: [],
     highlightNode: null,
   });
+  const defaultNodes = [
+    {
+      node: 0,
+      name: "income",
+    },
+    {
+      node: 1,
+      name: "expenditure",
+    },
+  ];
 
   const formatIncomeData = (data) => {
     const links = [];
-    const nodes = [];
+    const nodes = [...defaultNodes];
     data.forEach((user) => {
       nodes.push({
         node: nodes.length,
         name: user.name,
       });
-      if (user.income) {
-        links.push(addLink(nodes.length - 1, 0, user.income));
-      }
-      if (user.expenditure) {
-        links.push(addLink(0, 1, user.expenditure));
-      }
-      if (user.expenditures.mobile_bill) {
-        links.push(addLink(1, 3, user.expenditures.mobile_bill));
+
+      const parentNode = nodes.length - 1;
+      if (user.incomes) {
+        formatNodes(parentNode, 0, user.incomes, nodes, links);      
       }
 
-      if (user.expenditures.electricity_bill) {
-        links.push(addLink(1, 2, user.expenditures.electricity_bill));
+      if (user.expenditures) {
+        formatNodes(parentNode, 1, user.expenditures, nodes, links);        
       }
     });
 
@@ -51,7 +57,7 @@ function SankeyWrapper(props) {
     };
     return userdata;
   };
-  
+
   const {
     data,
     width,
@@ -70,7 +76,7 @@ function SankeyWrapper(props) {
       width={width + margin.left + margin.right}
       height={height + margin.top + margin.bottom}
     >
-      {/* <Sankey
+      <Sankey
         top={margin.top}
         left={margin.left}
         data={formatIncomeData(data)}
@@ -136,7 +142,7 @@ function SankeyWrapper(props) {
             </Group>
           </Group>
         )}
-      </Sankey> */}
+      </Sankey>
     </svg>
   );
 }

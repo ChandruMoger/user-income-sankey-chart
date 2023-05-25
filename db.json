@@ -9,8 +9,12 @@
         },
         {
           "name": "Freelance",
-          "income": null,
           "amount": 50000
+        },
+        {
+          "name": "Share Market",
+          "income": null,
+          "amount": 100000
         }
       ],
       "expenditures": [
@@ -24,7 +28,6 @@
         },
         {
           "name": "Shopping",
-          "income": null,
           "amount": 10000
         }
       ],
@@ -50,6 +53,16 @@
         {
           "name": "Internet",
           "amount": 5000
+        },
+        {
+          "name": "Medical",
+          "income": null,
+          "amount": 50000
+        },
+        {
+          "name": "Shopping",
+          "income": null,
+          "amount": 30000
         }
       ],
       "id": 2
@@ -77,6 +90,72 @@
         }
       ],
       "id": 3
+    },
+    {
+      "name": "Nagaraj",
+      "incomes": [
+        {
+          "name": "Fishing",
+          "income": null,
+          "amount": 300000
+        }
+      ],
+      "expenditures": [
+        {
+          "name": "Shopping",
+          "income": null,
+          "amount": 30000
+        },
+        {
+          "name": "Travel",
+          "income": null,
+          "amount": 15000
+        },
+        {
+          "name": "Home Maintainance",
+          "income": null,
+          "amount": 55000
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Dhanish",
+      "incomes": [
+        {
+          "name": "Salary",
+          "income": null,
+          "amount": 55555
+        },
+        {
+          "name": "Entertainment",
+          "income": null,
+          "amount": 15000
+        },
+        {
+          "name": "Singing",
+          "income": null,
+          "amount": 10000
+        }
+      ],
+      "expenditures": [],
+      "id": 5
+    },
+    {
+      "name": "Pratvi",
+      "incomes": [
+        {
+          "name": "Salary",
+          "amount": 15000
+        }
+      ],
+      "expenditures": [
+        {
+          "name": "Gaming",
+          "amount": 25000
+        }
+      ],
+      "id": 6
     }
   ]
 }
