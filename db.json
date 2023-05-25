@@ -2,103 +2,160 @@
   "users": [
     {
       "name": "Chandru",
-      "income": 3000,
-      "expenditure": 2200,
-      "expenditures": {
-        "mobile_bill": 700,
-        "electricity_bill": 1500
-      },
+      "incomes": [
+        {
+          "name": "Salary",
+          "amount": 100000
+        },
+        {
+          "name": "Freelance",
+          "amount": 50000
+        },
+        {
+          "name": "Share Market",
+          "income": null,
+          "amount": 100000
+        }
+      ],
+      "expenditures": [
+        {
+          "name": "Mobile Bill",
+          "amount": 1200
+        },
+        {
+          "name": "Internet",
+          "amount": 3000
+        },
+        {
+          "name": "Shopping",
+          "amount": 10000
+        }
+      ],
       "id": 1
     },
     {
-      "id": 2,
-      "name": "Naveen",
-      "income": 5000,
-      "expenditure": 3000,
-      "expenditures": {
-        "mobile_bill": 1000,
-        "electricity_bill": 2000
-      }
-    },
-    {
-      "id": 3,
       "name": "Mohini",
-      "income": 10000,
-      "expenditure": 7000,
-      "expenditures": {
-        "mobile_bill": 1000,
-        "electricity_bill": 6000
-      }
+      "incomes": [
+        {
+          "name": "Salary",
+          "amount": 90000
+        },
+        {
+          "name": "Business",
+          "amount": 200000
+        }
+      ],
+      "expenditures": [
+        {
+          "name": "Mobile Bill",
+          "amount": 12000
+        },
+        {
+          "name": "Internet",
+          "amount": 5000
+        },
+        {
+          "name": "Medical",
+          "income": null,
+          "amount": 50000
+        },
+        {
+          "name": "Shopping",
+          "income": null,
+          "amount": 30000
+        }
+      ],
+      "id": 2
     },
     {
-      "id": 4,
-      "name": "Dhanish",
-      "income": 10000,
-      "expenditure": 7000,
-      "expenditures": {
-        "mobile_bill": 1000,
-        "electricity_bill": 6000
-      }
-    },
-    {
-      "id": 5,
-      "name": "Krathika",
-      "income": 10000,
-      "expenditure": 10000,
-      "expenditures": {
-        "mobile_bill": 5000,
-        "electricity_bill": 5000
-      }
-    },
-    {
-      "id": 6,
-      "name": "Yatish",
-      "income": 10000,
-      "expenditure": 7000,
-      "expenditures": {
-        "mobile_bill": 1000,
-        "electricity_bill": 6000
-      }
-    },
-    {
-      "id": 7,
-      "name": "Prathick",
-      "income": 10000,
-      "expenditure": 7000,
-      "expenditures": {
-        "mobile_bill": 1000,
-        "electricity_bill": 6000
-      }
-    },
-    {
-      "id": 8,
-      "name": "Pritvi",
-      "income": 7000,
-      "expenditure": 4500,
-      "expenditures": {
-        "mobile_bill": 1500,
-        "electricity_bill": 3000
-      }
+      "name": "Naveen",
+      "incomes": [
+        {
+          "name": "Salary",
+          "amount": 15000
+        },
+        {
+          "name": "Business",
+          "amount": 300000
+        }
+      ],
+      "expenditures": [
+        {
+          "name": "Home Maintainance",
+          "amount": 25000
+        },
+        {
+          "name": "Finance",
+          "amount": 20000
+        }
+      ],
+      "id": 3
     },
     {
       "name": "Nagaraj",
-      "income": 100000,
-      "expenditure": 50000,
-      "expenditures": {
-        "mobile_bill": 15000,
-        "electricity_bill": 20000
-      },
-      "id": 9
+      "incomes": [
+        {
+          "name": "Fishing",
+          "income": null,
+          "amount": 300000
+        }
+      ],
+      "expenditures": [
+        {
+          "name": "Shopping",
+          "income": null,
+          "amount": 30000
+        },
+        {
+          "name": "Travel",
+          "income": null,
+          "amount": 15000
+        },
+        {
+          "name": "Home Maintainance",
+          "income": null,
+          "amount": 55000
+        }
+      ],
+      "id": 4
     },
     {
-      "name": "Sanjeeth",
-      "income": 12000,
-      "expenditure": 8000,
-      "expenditures": {
-        "mobile_bill": 2000,
-        "electricity_bill": 6000
-      },
-      "id": 10
+      "name": "Dhanish",
+      "incomes": [
+        {
+          "name": "Salary",
+          "income": null,
+          "amount": 55555
+        },
+        {
+          "name": "Entertainment",
+          "income": null,
+          "amount": 15000
+        },
+        {
+          "name": "Singing",
+          "income": null,
+          "amount": 10000
+        }
+      ],
+      "expenditures": [],
+      "id": 5
+    },
+    {
+      "name": "Pratvi",
+      "incomes": [
+        {
+          "name": "Salary",
+          "amount": 15000
+        }
+      ],
+      "expenditures": [
+        {
+          "name": "Gaming",
+          "amount": 25000
+        }
+      ],
+      "id": 6
     }
   ]
 }

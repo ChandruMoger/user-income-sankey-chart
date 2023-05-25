@@ -1,5 +1,6 @@
 {
     "income": "Income",
+    "incomes": "Incomes",
     "expenditure": "Expenditure",
     "mobile_bill": "Mobile Bill",
     "electricity_bill": "Electricity Bill",
@@ -14,5 +15,7 @@
     "expenditures": "Expenditures",
     "add_user": "Add User",
     "update-user": "Update User",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "add-income": "Add Income",
+    "add-expenditure": "Add Expenditure"
 }

@@ -119,7 +119,7 @@ function App() {
           <>
             <div className="d-flex my-4 column-gap-10">
               <h4 data-testid="users-title">{t("users-list-title")}</h4>
-              <button className="btn btn-success" onClick={addUser}>
+              <button className="btn ctm-theme-bg-color text-light" onClick={addUser}>
                 {t("add-user")}
               </button>
             </div>
@@ -127,8 +127,7 @@ function App() {
               <UserList
                 columns={[
                   "name",
-                  "income",
-                  "expenditure",
+                  "incomes",
                   "expenditures",
                   "actions",
                 ]}

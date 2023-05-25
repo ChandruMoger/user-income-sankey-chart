@@ -39,7 +39,8 @@
 }
 
 .header {
-  background-color: #0C7C81;
+  position: sticky;
+  top: 0;
 }
 
 .column-gap-10 {
@@ -65,4 +66,25 @@
     justify-content: center;
     z-index: 2000;
     background-color: rgb(0,0,0,0.2);
+}
+
+.form-btn {
+  padding: 2px 10px !important;
+}
+
+
+.ctm-theme-bg-color {
+  background-color: #0C7C81 !important;
+}
+
+.border-light-gray {
+  border-color: #ced4da;
+}
+
+.form-control {
+  border: none !important;
+}
+
+.modal-content {
+  max-height: 90vh;
 }

@@ -11,7 +11,7 @@ const path = linkHorizontal()
   .target((d) => [d.target.x0, d.y1]);
 
 import Sankey from "./SankeyDiagram";
-import { addLink } from "../utils/common-utility";
+import { formatNodes } from "../utils/common-utility";
 
 const color = scaleSequential(interpolateCool);
 
@@ -30,14 +30,6 @@ function SankeyWrapper(props) {
       node: 1,
       name: "expenditure",
     },
-    {
-      node: 2,
-      name: "electricity_bill",
-    },
-    {
-      node: 3,
-      name: "mobile_bill",
-    },
   ];
 
   const formatIncomeData = (data) => {
@@ -48,18 +40,14 @@ function SankeyWrapper(props) {
         node: nodes.length,
         name: user.name,
       });
-      if (user.income) {
-        links.push(addLink(nodes.length - 1, 0, user.income));
-      }
-      if (user.expenditure) {
-        links.push(addLink(0, 1, user.expenditure));
-      }
-      if (user.expenditures.mobile_bill) {
-        links.push(addLink(1, 3, user.expenditures.mobile_bill));
+
+      const parentNode = nodes.length - 1;
+      if (user.incomes) {
+        formatNodes(parentNode, 0, user.incomes, nodes, links);      
       }
 
-      if (user.expenditures.electricity_bill) {
-        links.push(addLink(1, 2, user.expenditures.electricity_bill));
+      if (user.expenditures) {
+        formatNodes(parentNode, 1, user.expenditures, nodes, links);        
       }
     });
 
@@ -69,7 +57,7 @@ function SankeyWrapper(props) {
     };
     return userdata;
   };
-  
+
   const {
     data,
     width,
